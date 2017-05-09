@@ -1,21 +1,20 @@
 package main
 
 import (
-	"algorithms/string"
 	"fmt"
+	"github.com/lifei6671/algorithms/bitmap"
 )
 
 func main() {
+	fmt.Println(0x07)
 
-	str := algorithms.LeftMoveRight("abcdefg",3);
+	bm := bitmap.NewBitMap(100)
 
-	fmt.Println("字符串转移",str);
+	bm.Add(10)
 
-	has := algorithms.StringContain("ABCDEFG","EDC");
+	bm.Remove(5)
 
-	fmt.Println("是否包含",has);
-
-	brother := algorithms.FindBrothers([]string{"ABD","DEFG","KIJ","JIK","IJK","ULFA","KIJJ",},"KIJ");
-
-	fmt.Println("查找兄弟字符串:",brother);
+	fmt.Println(bm.Contain(10))
+	bm.Remove(10)
+	fmt.Println(bm.Contain(10))
 }
