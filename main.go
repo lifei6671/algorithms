@@ -8,13 +8,15 @@ import (
 func main() {
 	fmt.Println(0x07)
 
-	bm := bitmap.NewBitMap(100)
+	bm := bitmap.NewRepeatBitMap(100)
+
+	for i := 1;i <= 99 ;i ++ {
+		bm.Add(uint(i))
+	}
 
 	bm.Add(10)
+	bm.Add(11)
 
-	bm.Remove(5)
+	bm.PrintNoRepeat()
 
-	fmt.Println(bm.Contain(10))
-	bm.Remove(10)
-	fmt.Println(bm.Contain(10))
 }
