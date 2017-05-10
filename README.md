@@ -2,4 +2,6 @@
 
 ## 目录
 
-- [数组和链表](lists/README.md)
+- [数组和链表](lists/list.md)
+- [栈](lists/stack.md)
+
