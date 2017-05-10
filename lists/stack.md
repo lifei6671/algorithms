@@ -2,6 +2,8 @@
 
 ## 概述
 
+原文：[http://www.cnblogs.com/skywang12345/p/3562239.html](http://www.cnblogs.com/skywang12345/p/3562239.html)
+
 栈（stack）是限定仅在表尾进行插入和删除操作的线性表。
 
 我们把允许插入和删除的一端称为栈顶（top），另一端称为栈底（bottom），不含任何数据的栈称为空栈。栈又称为后进先出（Last In First Out）的线性表，简称 LIFO 结构。
